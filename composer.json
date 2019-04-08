@@ -1,0 +1,10 @@
+{
+    "autoload": {
+        "psr-4": {
+            "Bref\\": "src/"
+        }
+    },
+    "require": {
+        "mnapoli/bref": "^0.3.6"
+    }
+}

@@ -1,0 +1,16 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: ''
+Resources:
+  HelloWorld:
+    Type: AWS::Serverless::Function
+    Properties:
+      FunctionName: hello-world
+      Description: ''
+      CodeUri: s3://lambda.cwp/f45d96e836db7c04fb2f96138dea9ed1
+      Handler: main-action.php
+      Timeout: 10
+      MemorySize: 1024
+      Runtime: provided
+      Layers:
+      - arn:aws:lambda:us-east-2:209497400698:layer:php-73:1
