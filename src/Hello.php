@@ -6,6 +6,7 @@ class Hello
 {
     public function hello()
     {
-        return 'Hello World';
+        $today = date('F Y d');
+        return 'Hello, Charles. Today is ' . $today;
     }
 }
